@@ -1,0 +1,155 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("Images/kuva1.jpg");
+    background-size: cover; /* Or 'contain', */
+    background-repeat: no-repeat; /* Or 'repeat', 'repeat-x', 'repeat-y' */
+    background-position: center; /* Or 'top', 'bottom', 'left', 'right' etc. */
+    display: flex;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #426ea0;
+    background: linear-gradient(to bottom, #8a9bfa 0%, #8a9bfa 70%, rgba(138, 155, 250, 0) 100%); /* color to transparent */
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.cta {
+    background-color: #e79e39;
+    color: rgb(228, 45, 45);    
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Navigation Box Styling */
+.nav-box {
+    display: inline-block; /* Ensures boxes stay in line */
+    padding: 10px 20px;   
+    margin: 0 10px;       /* Add margin between boxes */
+    border: 2px solid #241e1e; /* Add a subtle border */
+    border-radius: 5px;   /* Round the corners */
+    background-color: #060505;
+}
+
+.nav-box a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #f1e5e5;          /* Set link color */
+}
+
+/* Front page Gallery */
+.gallery {
+    padding: 50px 0; /* Add some padding to the gallery section */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer; /* Add cursor pointer to indicate clickability */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05); /* Slightly scale up image on hover */
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Ensure lightbox is on top */
+  }
+  
+  .lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox-content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+/* Hero Section Styling */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.artist-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.artist {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.artist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
